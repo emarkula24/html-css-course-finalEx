@@ -1,0 +1,208 @@
+body {
+    background-color: #FFE999;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.title-container {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    flex-shrink: 0;
+}
+.container {
+    background: radial-gradient(circle at center, rgba(210, 205, 205, 0.8), rgba(153, 153, 153, 0.8));
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 2px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    width: 393px;
+    height: 150px;
+    margin-top: 15px;
+    
+}
+
+.title {
+    font-size: 48px;
+    font-family: 'Love Ya Like A Sister';
+    text-align: center;
+    text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.3);
+    margin: 10px;
+    margin-right: 100px;
+    
+    
+}
+
+h3 {
+    font-size: 30px;
+    max-width: 120px;
+    word-wrap: break-word;
+    text-align: left;
+    margin-top: 1px;
+}
+.item-title {
+    color:white;
+    font-family: 'Love Ya Like A Sister';
+    font-size: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content:space-evenly;
+    margin-left: 20px;       
+}
+
+.price {
+    color: black;
+    margin-top: 20px;
+    
+    }
+
+.circle-arrow {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%; 
+    background-color: #9E070A; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px; 
+    position: relative; 
+}
+
+.circle-arrow::before {
+    content: '';
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 20px solid grey; 
+    position: absolute; 
+    transform: rotate(90deg);
+    margin-left: -5px;
+}
+
+.description {
+    color: black;
+    font-family: 'Luckiest Guy';
+    overflow-wrap: break-word;
+    font-size: 12px;
+    max-width: 53%;
+    margin-top: -100px;
+    margin-left: 10px;
+    text-align: left;
+}
+
+.image-container {
+    width: 200px; 
+    height: 150px; 
+    background-image: url('./pexels-photo-2702674.jpeg'); 
+    background-size: contain; 
+    background-repeat: no-repeat; 
+    background-position: center;
+}
+
+.plus-sign {
+    font-family: 'Luckiest Guy';
+    font-size: 64px;
+    color:black;
+    margin-top: 30px;
+}
+.cart-button {
+    margin-top: 15px;
+    margin-left: 20px;
+    background-color: #D9D9D9;
+    width: 353px;
+    height: 82px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cart-text {
+    font-family: 'Luckiest Guy';
+    font-size: 24px;
+}
+
+@media (max-width: 393px) {
+
+    body {
+        background-color: #FFE999;
+        margin: 0;
+        padding: 0;
+        display: grid;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100hv;
+    }
+
+    .title-container {
+        justify-content: space-between;
+        width: 100%;
+        
+    }
+    .container {
+        background: radial-gradient(circle at center, rgba(210, 205, 205, 0.8), rgba(153, 153, 153, 0.8));
+        display: flex;
+        flex-direction: column;
+        justify-content: top;
+        border-radius: 2px;
+        box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+        width: 393px;
+        height: 150px;
+        margin-top: 15px;
+        
+        
+    }
+
+    .title {
+        font-size: 48px;
+        margin-right: 70px;
+    }
+
+    h3 {
+        font-size: 30px;
+        max-width: 150px;
+        
+    }
+    .item-title {
+        font-size: 30px;
+        justify-content:flex-start;
+        margin-left: 15px;  
+    }
+
+    .price {
+        text-align:end;
+        }
+
+    .description {
+        margin-top: -100px;
+
+    }
+
+    .image-container {
+        width: 200px; 
+        height: 150px; 
+        background-size: contain; 
+
+        
+    }
+
+    .plus-sign {
+        margin-right: 5px;
+        text-align: right;
+
+    }
+    .cart-button {
+        position: absolute;
+        bottom: 0;
+        margin-bottom: 10px;
+    }
+
+}

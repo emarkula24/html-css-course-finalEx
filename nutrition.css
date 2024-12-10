@@ -1,0 +1,131 @@
+body {
+    background-color: #FFE999;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.circle-arrow {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%; 
+    background-color: #9E070A; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px; 
+    position: relative; 
+}
+
+.circle-arrow::before {
+    content: '';
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 20px solid grey; 
+    position: absolute; 
+    transform: rotate(90deg);
+    margin-left: -5px;
+}
+
+table {
+    width: 20%; 
+    height: 700px;
+    table-layout: fixed; 
+    border-collapse: collapse; 
+    font-size: 15px;
+    font-family: 'Love Ya Like A Sister';
+    margin: 0 auto;
+
+}
+
+th, td {
+    padding: 8px; 
+    text-align: center; 
+    border: 1px solid black; 
+}
+
+th {
+    background-color: solid black; 
+}
+
+td {
+    word-wrap: break-word; 
+
+}
+
+h2 {
+    font-family: 'Love Ya Like A Sister';
+    font-size: 32px;
+    margin-left: 20px;
+}
+hr {
+    color: solid black;
+    margin-top: 10px;
+}
+
+
+
+@media (max-width: 393px) {
+    body {
+        background-color: #FFE999;
+        margin: 0;
+        padding: 0;
+    }
+    .circle-arrow {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%; 
+        background-color: #9E070A; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10px; 
+        position: relative; 
+    }
+
+    .circle-arrow::before {
+        content: '';
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-top: 20px solid grey; 
+        position: absolute; 
+        transform: rotate(90deg);
+        margin-left: -5px;
+    }
+
+    table {
+        width: 90%; 
+        table-layout: fixed; 
+        border-collapse: collapse; 
+        font-size: 15px;
+        font-family: 'Love Ya Like A Sister';
+        align-items: center;
+    }
+    
+    th, td {
+    padding: 8px; 
+    text-align: center; 
+    border: 1px solid black; 
+    }
+
+    th {
+    background-color: solid black; 
+    }
+
+    td {
+    word-wrap: break-word; 
+    max-width: 30px;
+    }
+
+    h2 {
+        font-family: 'Love Ya Like A Sister';
+        font-size: 32px;
+        align-items: center;
+    }
+    hr {
+        color: solid black;
+        margin-top: 10px;
+    }
+}

@@ -1,0 +1,68 @@
+body {
+    background-color: #9E070A;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    background-color: #FFE999;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    border-radius: 2px;
+    height: 650px;
+    width: 393px;
+    margin: 0 auto;
+
+}
+
+h2 {
+    font-size: 48px;
+    font-family: 'Love Ya Like A Sister';
+    text-align: center;
+    text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+    font-size: 96px;
+    font-family: 'Love Ya Like A Sister';
+    text-align: center;
+    color: white;
+    margin: 10px 0;
+    
+}
+
+@media (max-width: 393px) {
+    body {
+        background-color: #9E070A;
+        margin: 0;
+        padding: 0;
+    }
+    .container {
+        background-color: #FFE999;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+        border-radius: 2px;
+        height: 650px;
+        width: 393px;
+
+    }
+
+    h2 {
+        font-size: 48px;
+        font-family: 'Love Ya Like A Sister';
+        text-align: center;
+        text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.3);
+    }
+    
+    h1 {
+        font-size: 96px;
+        font-family: 'Love Ya Like A Sister';
+        text-align: center;
+        color: white;
+        margin: 10px 0;
+        
+    }
+}

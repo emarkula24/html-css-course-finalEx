@@ -1,0 +1,118 @@
+
+@media (max-width: 393px) {
+    body {
+        background-color: #9E070A;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        height: 100hv;
+    }
+
+    .circle-arrow {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%; 
+        background-color: #FFE999; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10px; 
+        position: relative; 
+        margin-top: -20px;
+    }
+
+    .circle-arrow::before {
+        content: '';
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-top: 20px solid grey; 
+        position: absolute; 
+        transform: rotate(90deg);
+        margin-left: -5px;
+    }
+
+    .title-header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    h2 {
+        color: white;
+        font-size: 48px;
+        font-family: 'Love Ya Like A Sister';
+        margin-left: 20px;
+        margin-top: 20px;
+    }
+    .total-amount {
+        margin: 15px;
+        margin-top: -15px;
+        color: white;
+        font-size: 48px;
+        font-family: 'Love Ya Like A Sister';
+        text-decoration: underline;
+    }
+    
+    .container {
+        width: 393px;
+        height: 650px;
+        background-color: #D9D9D9;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        justify-content: space-evenly;
+    }
+
+    .item-container {
+        background-color: #FFE999;
+        width: 355px;
+        height: 120px;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .order-item {
+        font-family: 'Love Ya Like A Sister';
+        font-size: 24px;
+        text-align: center;
+        word-wrap: break-word; 
+    }
+
+    .restaurant-selection {
+        background-color: #3F2525;
+        width: 355px;
+        height: 120px;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .submit-order {
+        margin-top: 15px;
+        background-color: #FFE999;
+        width: 340px;
+        height: 50px;
+        display: flex;
+        border-radius: 20px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .restaurant-text {
+        color: white;
+        font-family: 'Love Ya Like A Sister';
+        font-size: 24px;
+    }
+
+    .submit-text {
+        font-family: 'Love Ya Like A Sister';
+        font-size: 48px;
+    }
+}
