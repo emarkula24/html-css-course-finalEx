@@ -3,6 +3,7 @@ body {
     margin: 0;
     padding: 0;
 }
+
 .container {
     background-color: #FFE999;
     display: flex;
@@ -13,6 +14,7 @@ body {
     height: 650px;
     width: 393px;
     margin: 0 auto;
+    border: 3px solid #000000; 
 
 }
 

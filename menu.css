@@ -6,9 +6,19 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    height: 100%;
 }
 
+@media (min-width: 500px) {
+    .desktop-view {
+        border: 3px solid #000000; 
+        max-width: 393px; 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        padding: 10px;
+    }
+}
 .title-container {
     display: flex;
     align-items: center;
@@ -141,7 +151,6 @@ h3 {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        height: 100hv;
     }
 
     .title-container {
