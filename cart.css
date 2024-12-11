@@ -1,5 +1,138 @@
+body {
+    background-color: gray;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
 
+.desktop-view {
+    background-color: #9E070A; 
+    border: 2px solid #000000; 
+    max-width: 393px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.circle-arrow {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%; 
+    background-color: #FFE999; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px; 
+    position: relative; 
+    margin-top: -20px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.circle-arrow::before {
+    content: '';
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 20px solid grey; 
+    position: absolute; 
+    transform: rotate(90deg);
+    margin-left: -5px;
+}
+
+.title-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+h2 {
+    color: white;
+    font-size: 48px;
+    font-family: 'Love Ya Like A Sister';
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.total-amount {
+    margin: 15px;
+    margin-top: -15px;
+    color: white;
+    font-size: 48px;
+    font-family: 'Love Ya Like A Sister';
+    text-decoration: underline;
+}
+
+.container {
+    width: 393px;
+    height: 650px;
+    background-color: #D9D9D9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-evenly;
+    border-radius: 2px;
+}
+
+.item-container {
+    background-color: #FFE999;
+    width: 355px;
+    height: 120px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.order-item {
+    font-family: 'Love Ya Like A Sister';
+    font-size: 24px;
+    text-align: center;
+    word-wrap: break-word; 
+    margin: 1px 0;
+   
+}
+
+.restaurant-selection {
+    background-color: #3F2525;
+    width: 355px;
+    height: 120px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.submit-order {
+    margin-top: 15px;
+    margin-bottom:10px;
+    background-color: #FFE999;
+    width: 340px;
+    height: 50px;
+    display: flex;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.restaurant-text {
+    color: white;
+    font-family: 'Love Ya Like A Sister';
+    font-size: 24px;
+}
+
+.submit-text {
+    font-family: 'Love Ya Like A Sister';
+    font-size: 48px;
+}
 @media (max-width: 393px) {
+
     body {
         background-color: #9E070A;
         margin: 0;
@@ -9,6 +142,7 @@
         align-items: center;
         justify-content: space-evenly;
         height: 100hv;
+        overflow: hidden 
     }
 
     .circle-arrow {
@@ -22,6 +156,7 @@
         margin: 10px; 
         position: relative; 
         margin-top: -20px;
+        box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
     }
 
     .circle-arrow::before {
@@ -65,6 +200,7 @@
         align-items: center;
         justify-content: center;
         justify-content: space-evenly;
+        border-radius: 2px;
     }
 
     .item-container {
@@ -73,8 +209,10 @@
         height: 120px;
         border-radius: 20px;
         display: flex;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
+        box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
     }
 
     .order-item {
@@ -82,6 +220,8 @@
         font-size: 24px;
         text-align: center;
         word-wrap: break-word; 
+        margin: 1px 0;
+       
     }
 
     .restaurant-selection {
@@ -92,6 +232,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
     }
 
     .submit-order {
@@ -103,6 +244,7 @@
         border-radius: 20px;
         align-items: center;
         justify-content: center;
+        box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
     }
 
     .restaurant-text {
